@@ -1,4 +1,4 @@
-# devkit — In-Game Developer Debug Menu
+# devkit — In-game developer debug menu for Qbox servers
 
 A standalone in-game developer debug and resource management menu for FiveM servers. Scans a configurable resource folder and provides a UI to manage, test and debug resources without leaving the game.
 
