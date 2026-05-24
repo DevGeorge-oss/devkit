@@ -7,7 +7,7 @@
 ]]
 
 --[[
-    POPCORN DEBUG — CLIENT
+    DEVKIT DEBUG — CLIENT
     ─────────────────────────────────────────────────────────────
     Opens/closes the debug UI with F9 (configurable).
     Sends resource list to NUI on open.
@@ -78,7 +78,7 @@ RegisterNUICallback('teleport', function(data, cb)
     local x, y, z = tonumber(data.x), tonumber(data.y), tonumber(data.z)
     if x and y and z then
         SetEntityCoords(PlayerPedId(), x, y, z, false, false, false, false)
-        lib.notify({ title = 'Popcorn', description = ('Teleported to %.1f %.1f %.1f'):format(x, y, z), type = 'success' })
+        lib.notify({ title = 'DevKit', description = ('Teleported to %.1f %.1f %.1f'):format(x, y, z), type = 'success' })
     end
     cb('ok')
 end)

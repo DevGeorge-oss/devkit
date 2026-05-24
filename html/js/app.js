@@ -1,4 +1,4 @@
-/* ── Popcorn Debug — Frontend ─────────────────────────── */
+/* ── DevKit Debug — Frontend ─────────────────────────── */
 
 const app         = document.getElementById('app')
 const resourceList = document.getElementById('resource-list')

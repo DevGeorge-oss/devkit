@@ -37,7 +37,7 @@ A standalone in-game developer debug and resource management menu for FiveM serv
 All settings are in `shared/config.lua`:
 
 ```lua
-Config.ResourceFolder = '[popcorn]'  -- folder to scan
+Config.ResourceFolder = '[YOUR_FOLDER_NAME]'  -- folder to scan CHANGE THIS!!
 Config.Keybind        = 'F9'         -- key to open menu
 Config.AdminOnly      = true         -- admin only
 ```

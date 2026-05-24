@@ -11,9 +11,9 @@ Config = {}
 --[[
     ResourceFolder — the bracket folder devkit scans for resources.
     Change this to match your server's resource folder name.
-    Examples: '[popcorn]', '[custom]', '[scripts]', '[resources]'
+    Examples: '[DevKit]', '[custom]', '[scripts]', '[resources]'
 ]]
-Config.ResourceFolder = '[popcorn]'
+Config.ResourceFolder = '[YOUR_FOLDER_NAME]'
 
 --[[
     Keybind — default key to open the devkit menu in game.
