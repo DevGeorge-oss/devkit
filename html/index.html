@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popcorn Debug</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app" class="hidden">
+
+        <!-- Sidebar -->
+        <div id="sidebar">
+            <div id="sidebar-header">
+                <span class="logo">🛠️ devkit</span>
+                <span id="player-name">DevGeorge</span>
+            </div>
+
+            <div id="sidebar-actions">
+                <button class="tab-btn active" data-tab="resources">Resources</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+                <button class="tab-btn" data-tab="log">Console</button>
+            </div>
+
+            <!-- Resource list -->
+            <div id="resource-list"></div>
+
+            <div id="sidebar-footer">
+                <button id="btn-refresh" class="footer-btn">↺ Refresh</button>
+                <button id="btn-close" class="footer-btn danger">✕ Close</button>
+            </div>
+        </div>
+
+        <!-- Main panel -->
+        <div id="main-panel">
+
+            <!-- Resources tab -->
+            <div id="tab-resources" class="tab-content active">
+                <div id="resource-detail">
+                    <div class="empty-state">Select a resource from the sidebar</div>
+                </div>
+            </div>
+
+            <!-- Tools tab -->
+            <div id="tab-tools" class="tab-content">
+                <div class="panel-section">
+                    <h3>Player</h3>
+                    <div class="tool-row">
+                        <button class="action-btn" id="btn-fix-skin">Fix Skin</button>
+                        <button class="action-btn" id="btn-get-coords">Copy Coords</button>
+                    </div>
+                    <div id="coords-display" class="coords-box hidden"></div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Teleport</h3>
+                    <div class="input-row">
+                        <input type="number" id="tp-x" placeholder="X" step="0.01">
+                        <input type="number" id="tp-y" placeholder="Y" step="0.01">
+                        <input type="number" id="tp-z" placeholder="Z" step="0.01">
+                        <button class="action-btn" id="btn-tp">Go</button>
+                    </div>
+                    <div class="quick-tp-row">
+                        <span class="label">Quick:</span>
+                        <button class="quick-btn" data-x="-59.34" data-y="-1207.93" data-z="28.30">ATM Shop</button>
+                        <button class="quick-btn" data-x="146.58" data-y="-1035.75" data-z="29.37">Legion ATM</button>
+                        <button class="quick-btn" data-x="-540.58" data-y="-212.02" data-z="37.65">Default Spawn</button>
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Give Items</h3>
+                    <div class="input-row">
+                        <input type="text" id="give-item" placeholder="item_name">
+                        <input type="number" id="give-amount" placeholder="Amount" value="1" min="1">
+                        <button class="action-btn" id="btn-give">Give</button>
+                    </div>
+                    <div class="quick-tp-row">
+                        <span class="label">Quick:</span>
+                        <button class="quick-give" data-item="pl_hackingdevice" data-amount="5">Hacking Device x5</button>
+                        <button class="quick-give" data-item="pl_drill" data-amount="5">Drill x5</button>
+                        <button class="quick-give" data-item="pl_rope" data-amount="5">Rope x5</button>
+                    </div>
+                </div>
+
+                <div class="panel-section">
+                    <h3>Run Command</h3>
+                    <div class="input-row">
+                        <input type="text" id="cmd-input" placeholder="command (without /)">
+                        <button class="action-btn" id="btn-run-cmd">Run</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Console tab -->
+            <div id="tab-log" class="tab-content">
+                <div id="log-toolbar">
+                    <button class="small-btn" id="btn-clear-log">Clear</button>
+                    <label class="toggle-label">
+                        <input type="checkbox" id="log-autoscroll" checked>
+                        Auto-scroll
+                    </label>
+                </div>
+                <div id="log-output"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
