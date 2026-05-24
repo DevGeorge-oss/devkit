@@ -64,6 +64,9 @@ devkit_give [playerid] [item] [amount]
 ## Keybind
 Default: **F9** — can be rebound by the player in FiveM keybind settings in game.
 
+<img width="858" height="548" alt="image" src="https://github.com/user-attachments/assets/c85c15da-c87c-4520-b182-7a4210824f0a" />
+
+
 ## Notes
 - Designed for development servers, not production
 - Admin only by default — players without the `command` ace cannot open the menu
